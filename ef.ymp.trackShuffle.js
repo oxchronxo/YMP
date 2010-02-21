@@ -105,7 +105,7 @@ TrackShuffle.prototype = {
 			height: '10px',
             width: '12px',
             margin: '2px 2px 0px 0px',
-			backgroundImage: 'url(http://fehrenbacher.com/lib/images/shuffle.gif)',
+			backgroundImage: 'url(http://github.com/oxchronxo/YMP/raw/master/images/shuffle.gif)',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '0px ' + (this.shuffle ? -(10) : 0) + 'px'
 		});

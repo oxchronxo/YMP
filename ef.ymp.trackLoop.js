@@ -104,7 +104,7 @@ TrackLoop.prototype = {
 			height: '10px',
             width: '12px',
             margin: '2px 2px 0px 0px',
-			backgroundImage: 'url(http://fehrenbacher.com/lib/images/loop.gif)',
+			backgroundImage: 'url(http://github.com/oxchronxo/YMP/raw/master/images/loop.gif)',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '0px ' + (this.loop ? -(10) : 0) + 'px'
 		});
