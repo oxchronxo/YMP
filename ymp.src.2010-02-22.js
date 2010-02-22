@@ -2029,7 +2029,9 @@ if (isMWPSupported === true) {
             function webplayerjs() {
                 var suffix = '-min-2.0.31.js';
                 var path = "http://l.yimg.com/us.js.yimg.com/lib/mus/js/ymwp/";
-                return path + 'mediaplayer' + suffix;
+				var output = path + 'mediaplayer' + suffix;
+console.log("output:"+output);
+                return output;
             };
             var playerScriptSrc = webplayerjs();
             if (playerScriptSrc && playerScriptSrc.length > 0) {
