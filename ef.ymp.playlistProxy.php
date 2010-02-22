@@ -1,13 +1,13 @@
 <?php
 	
-	$playlist_id = $_GET["playlist_id"];
+	$playlist_id = $_GET["playlist"];
 	
-	if (!$playlist_id) {
+	if (!$playlist) {
 		exit;
 	}
-	#echo "playlist_id:" . $playlist_id . "\n";
+	#echo "playlist:" . $playlist . "\n";
 	
-	$url = "http://query.yahooapis.com/v1/public/yql?q=USE%20%22http%3A%2F%2Fgithub.com%2Foxchronxo%2FYQL%2Fraw%2Fmaster%2Fplaylist.com.db.table.xml%22%20AS%20playlists%3B%0ASELECT%20*%20FROM%20playlists%20WHERE%20playlist_id%3D" . $playlist_id . "%3B&format=xml&diagnostics=false";
+	$url = "http://query.yahooapis.com/v1/public/yql?q=USE%20%22http%3A%2F%2Fgithub.com%2Foxchronxo%2FYQL%2Fraw%2Fmaster%2Fplaylist.com.db.table.xml%22%20AS%20playlists%3B%0ASELECT%20*%20FROM%20playlists%20WHERE%20playlist%3D" . $playlist . "%3B&format=xml&diagnostics=false";
 	#echo "url:" . $url . "\n";
 	
 	$xml = simplexml_load_file($url);
