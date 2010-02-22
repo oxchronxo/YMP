@@ -2014,7 +2014,6 @@ log("inside parser");
                 }
             }
         }
-log("mediaTracks",mediaTracks);
         if (mediaTracks.length <= 0) {
             for (var i = 0; i < anchorCollectionLen; i++) {
                 type = String(anchorCollection[i].type).toLowerCase();
