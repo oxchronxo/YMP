@@ -5,6 +5,7 @@
 
 
 YAHOO.mediaplayer.goosecss = "\r\n/* Reset CSS */  \r\n#ymp-player div, #ymp-tray div{display:block;}\r\n#ymp-player div, #ymp-player ul, #ymp-player li, #ymp-player textarea, #ymp-player p, #ymp-player td,\r\n#ymp-tray div, #ymp-tray ul, #ymp-tray li, #ymp-tray textarea, #ymp-tray p{margin:0;padding:0;}\r\n#ymp-player img, #ymp-tray img{border:0;}\r\n#ymp-player em, #ymp-player strong,\r\n#ymp-tray em, #ymp-tray strong{font-style:normal;font-weight:normal;}\r\n#ymp-player li, #ymp-tray li{list-style:none;}\r\n#ymp-player sup, #ymp-tray sup{vertical-align:text-top;}\r\n#ymp-player sub, #ymp-tray sub{vertical-align:text-bottom;}\r\n#ymp-player input, #ymp-player textarea, #ymp-player select,\r\n#ymp-tray input, #ymp-tray textarea, #ymp-tray select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%;}                                                      \r\n#ymp-player table{border-collapse:collapse;border-spacing:0;}\r\n\r\n/* Player Body */\r\n#ymp-player\r\n{\r\n /* Hide the player initially, show it only after it's properly positioned */\r\n /*display:none;*/\r\n position:fixed;\r\n overflow:hidden;\r\n bottom:10px;\r\n left:0;          \r\n width:33px; /* Initial width of the player */\r\n margin:0;\r\n padding:0;\r\n z-index:9999;\r\n color:#595959;\r\n text-align:left;\r\n}\r\n#ymp-body\r\n{\r\n position:relative;\r\n overflow:hidden;\r\n margin:0;\r\n padding:0;\r\n height:71px; /* +10px for shadow */\r\n background-position:100% -313px;\r\n font-family:Arial, Helvetica;\r\n font-size:12px;\r\n}\r\n#ymp-body h1, #ymp-tray h1,\r\n#ymp-body h2, #ymp-tray h2, \r\n#ymp-body h3, #ymp-tray h3, \r\n#ymp-body h4, #ymp-tray h4, \r\n#ymp-body h5, #ymp-tray h5,\r\n#ymp-body h6 #ymp-tray h6\r\n{\r\n position:absolute;\r\n left:-10000px;\r\n height:0;\r\n width:0;\r\n}\r\n#ymp-body a, #ymp-tray a\r\n{              \r\n margin:0;\r\n padding:0;\r\n outline:none;\r\n text-decoration:none;\r\n font-family:Arial, Helvetica;\r\n border:none;\r\n}\r\n#ymp-body a span, #ymp-tray a span\r\n{               \r\n margin:0;\r\n padding:0;\r\n border:none;\r\n}\r\n#ymp-body a:hover\r\n{\r\n text-decoration:underline;\r\n}\r\n.ymp-player-min #ymp-body\r\n{\r\n width:33px; /* +10px for shadow */\r\n background-position:-655px -313px;\r\n}\r\n.ymp-player-max #ymp-body\r\n{\r\n width:690px; /* +10px for shadow */\r\n}\r\n#ymp-body #ymp-body-base\r\n{                       \r\n position:relative;\r\n width:680px;\r\n height:62px;\r\n opacity:.9;\r\n -moz-opacity:.9;\r\n z-index:1;\r\n}\r\n#ymp-body #ymp-body-strip\r\n{                    \r\n width:677px;\r\n height:100%;\r\n filter:alpha(opacity=90);\r\n}                             \r\n#ymp-body #ymp-body-cap\r\n{                            \r\n position:absolute;\r\n top:0;\r\n right:0;\r\n width:4px; /* IE7 Quirks mode does not play well with position:absolute; and right:0; with odd width */\r\n height:100%;\r\n filter:alpha(opacity=90); \r\n}\r\n.ymp-player-min #ymp-body #ymp-body-base\r\n{\r\n width:24px;\r\n}\r\n.ymp-player-min #ymp-body #ymp-body-strip\r\n{\r\n width:21px;\r\n}\r\n#ymp-body #ymp-meta\r\n{            \r\n position:absolute;           \r\n top:4px;\r\n left:180px;\r\n width:344px;\r\n height:54px;\r\n background-position:-180px 0;\r\n z-index:2;\r\n}\r\n#ymp-body #ymp-meta-bottom-right\r\n{\r\n position:absolute;\r\n bottom:5px;\r\n right:5px;\r\n}                            \r\n#ymp-body #ymp-meta-top, #ymp-body #ymp-meta-bottom\r\n{                     \r\n display:table;\r\n position:absolute;\r\n top:5px;\r\n left:58px;\r\n width:280px;\r\n}                     \r\n#ymp-body #ymp-meta-bottom\r\n{             \r\n top:auto;\r\n bottom:5px;\r\n}\r\n#ymp-body #ymp-meta-bottom td\r\n{\r\n height:16px;\r\n vertical-align:bottom;   \r\n font-size:11px;\r\n}\r\n#ymp-body #ymp-meta-top td\r\n{\r\n height:32px;\r\n vertical-align:top;\r\n}\r\n#ymp-body #ymp-meta-progress\r\n{                            \r\n position:relative;\r\n top:2px;\r\n white-space:nowrap;\r\n font-size:11px; \r\n line-height:16px;        \r\n margin:0 5px 0 0;\r\n}\r\n#ymp-body #ymp-stickwall\r\n{\r\n display:none;\r\n position:absolute;\r\n top:0;\r\n left:0;\r\n width:344px;\r\n height:54px;                        \r\n z-index:3;\r\n background-position:-179px -199px;\r\n}\r\n#ymp-body .ymp-stickwall-gradient\r\n{                       \r\n position:absolute;\r\n top:0;\r\n left:0;\r\n width:100%;\r\n height:100%;\r\n background-position:-180px -54px;\r\n}          \r\n#ymp-body #ymp-yahoo-logo\r\n{\r\n position:absolute;\r\n top:22px;\r\n left:11px;                       \r\n width:28px;\r\n height:17px;\r\n background-position:-120px -62px;\r\n z-index:2;\r\n}\r\n  \r\n/* Pixels for rounded corners */         \r\n#ymp-body .ymp-pix-dark, #ymp-tray .ymp-pix-dark,\r\n#ymp-body .ymp-pix-light, #ymp-tray .ymp-pix-light\r\n{             \r\n position:absolute;\r\n display:block;               \r\n overflow:hidden;\r\n width:1px;\r\n height:1px;  \r\n}                                    \r\n#ymp-body .ymp-pix-light, #ymp-tray .ymp-pix-light\r\n{\r\n opacity:.19;\r\n -moz-opacity:.19;\r\n filter:alpha(opacity=19);\r\n}\r\n#ymp-body .ymp-pix-dark, #ymp-tray .ymp-pix-dark\r\n{\r\n opacity:.69;\r\n -moz-opacity:.69;\r\n filter:alpha(opacity=69);\r\n} \r\n#ymp-body .ymp-pix-tr1, #ymp-tray .ymp-pix-tr1\r\n{\r\n top:0;\r\n right:2px;\r\n}         \r\n#ymp-body .ymp-pix-tr2, #ymp-tray .ymp-pix-tr2\r\n{\r\n top:0;\r\n right:1px;\r\n}\r\n#ymp-body .ymp-pix-tr3, #ymp-tray .ymp-pix-tr3\r\n{\r\n top:1px;\r\n right:0;                          \r\n}           \r\n#ymp-body .ymp-pix-tr4, #ymp-tray .ymp-pix-tr4\r\n{\r\n top:2px;\r\n right:0;                              \r\n}\r\n#ymp-body .ymp-pix-tl1, #ymp-tray .ymp-pix-tl1\r\n{\r\n top:2px;\r\n left:0;\r\n}         \r\n#ymp-body .ymp-pix-tl2, #ymp-tray .ymp-pix-tl2\r\n{\r\n top:1px;\r\n left:0;\r\n}\r\n#ymp-body .ymp-pix-tl3, #ymp-tray .ymp-pix-tl3\r\n{\r\n top:0;\r\n left:1px;\r\n}           \r\n#ymp-body .ymp-pix-tl4, #ymp-tray .ymp-pix-tl4\r\n{\r\n top:0;\r\n left:2px;\r\n}\r\n#ymp-body .ymp-pix-br1, #ymp-tray .ymp-pix-br1\r\n{\r\n bottom:0;\r\n right:2px;\r\n}         \r\n#ymp-body .ymp-pix-br2, #ymp-tray .ymp-pix-br2\r\n{\r\n bottom:0;\r\n right:1px;                                \r\n}\r\n#ymp-body .ymp-pix-br3, #ymp-tray .ymp-pix-br3\r\n{\r\n bottom:1px;\r\n right:0;                                  \r\n}           \r\n#ymp-body .ymp-pix-br4, #ymp-tray .ymp-pix-br4\r\n{\r\n bottom:2px;\r\n right:0;                                  \r\n}           \r\n#ymp-body .ymp-cap-body1,\r\n#ymp-body .ymp-cap-body2,\r\n#ymp-body .ymp-stickwall-body1,\r\n#ymp-body .ymp-stickwall-body2,\r\n#ymp-body .ymp-stickwall-body3,\r\n#ymp-body .ymp-stickwall-body4,\r\n#ymp-body .ymp-stickwall-body5\r\n{                            \r\n position:absolute;\r\n overflow:hidden;\r\n}                    \r\n#ymp-body .ymp-cap-body1\r\n{\r\n top:1px;\r\n right:1px;\r\n width:2px;\r\n height:60px;   \r\n}               \r\n#ymp-body .ymp-cap-body2\r\n{\r\n top:3px;\r\n right:0;\r\n width:1px;\r\n height:56px;           \r\n}\r\n#ymp-body .ymp-stickwall-body1\r\n{          \r\n top:2px;\r\n left:0;\r\n width:1px;\r\n height:50px;\r\n}\r\n#ymp-body .ymp-stickwall-body2\r\n{\r\n top:1px;\r\n left:1px;\r\n width:1px;\r\n height:52px;\r\n}\r\n#ymp-body .ymp-stickwall-body3\r\n{\r\n top:1px;\r\n right:1px;\r\n width:1px;\r\n height:52px;\r\n}\r\n#ymp-body .ymp-stickwall-body4\r\n{\r\n top:2px;\r\n right:0;\r\n width:1px;\r\n height:50px;\r\n}\r\n#ymp-body .ymp-stickwall-body5\r\n{\r\n top:0;\r\n left:2px;\r\n width:340px;\r\n height:100%;\r\n}\r\n#ymp-body #ymp-rhap-stickwall, #ymp-body #ymp-error-stickwall\r\n{\r\n display:none;\r\n}               \r\n#ymp-body .ymp-rhap-stickwall .ymp-stickwall-body1,\r\n#ymp-body .ymp-rhap-stickwall .ymp-stickwall-body2, \r\n#ymp-body .ymp-rhap-stickwall .ymp-stickwall-body3,\r\n#ymp-body .ymp-rhap-stickwall .ymp-stickwall-body4,\r\n#ymp-body .ymp-rhap-stickwall .ymp-stickwall-body5,\r\n#ymp-body .ymp-error-stickwall .ymp-stickwall-body1,\r\n#ymp-body .ymp-error-stickwall .ymp-stickwall-body2, \r\n#ymp-body .ymp-error-stickwall .ymp-stickwall-body3,\r\n#ymp-body .ymp-error-stickwall .ymp-stickwall-body4,\r\n#ymp-body .ymp-error-stickwall .ymp-stickwall-body5\r\n{\r\n background-color:#6CABD2;\r\n}\r\n\r\n#ymp-body .ymp-error-stickwall h2\r\n{\r\n position:absolute;\r\n top:12px;\r\n left:11px;\r\n width:295px;\r\n margin:0;\r\n padding:0 0 0 34px;\r\n font-size:11px;\r\n line-height:14px;\r\n color:#444;\r\n}\r\n#ymp-body .ymp-error-stickwall span.ymp-skin\r\n{\r\n display:block;\r\n position:absolute;\r\n top:5px;\r\n left:0;\r\n width:24px;\r\n height:20px;\r\n background-position:-524px 0;\r\n}\r\n#ymp-body .ymp-error-stickwall a\r\n{\r\n color:#444;\r\n text-decoration:underline;\r\n}\r\n      \r\n/* Themeable styles */\r\n.ymp-color-main\r\n{\r\n background-color:#BFBFBF; /* #B2B2B2 */\r\n}\r\n.ymp-color-tray\r\n{\r\n background-color:#8D8E8D; /* #8D8E8D */\r\n}                   \r\n.ymp-color-text-main, .ymp-color-text-main:link\r\n{\r\n color:#595959;\r\n}\r\n.ymp-color-text-tray, .ymp-color-text-tray:link\r\n{\r\n color:#FFF;\r\n}\r\n.ymp-skin\r\n{\r\n background-image:url(http://l.yimg.com/us.yimg.com/i/us/mus/ymwp/mediaplayer-2.0.31.png);\r\n -background-image:url(http://l.yimg.com/us.yimg.com/i/us/mus/ymwp/mediaplayer-2.0.31.gif);\r\n background-repeat:no-repeat;\r\n}\r\n\r\n/* Override YUI style */\r\n.show-scrollbars\r\n{\r\n overflow:hidden;\r\n}\r\n\r\n/* Playlist Tray */\r\n#ymp-tray\r\n{   \r\n /* Hide it initially */         \r\n display:none; \r\n position:fixed;\r\n overflow:hidden;\r\n bottom:81px;\r\n left:180px;   \r\n width:344px;\r\n height:18px;\r\n margin:0;\r\n padding:0;\r\n z-index:9998;\r\n font-family:Arial, Helvetica;\r\n font-size:11px;         \r\n text-align:left;\r\n}\r\n#ymp-tray-body\r\n{\r\n position:relative;\r\n width:100%; \r\n height:100%;\r\n background-position:-180px -108px; \r\n opacity:.95;\r\n -moz-opacity:.95;\r\n filter:alpha(opacity=95);\r\n}\r\n#ymp-tray-top\r\n{\r\n position:absolute;\r\n overflow:hidden;\r\n top:18px;\r\n left:0;\r\n width:100%;\r\n height:6px;\r\n}              \r\n.ymp-tray-body1\r\n{             \r\n display:block;\r\n overflow:hidden;\r\n margin:0 0 0 3px;\r\n width:100%;\r\n height:1px;\r\n}\r\n.ymp-tray-body2\r\n{             \r\n display:block;  \r\n overflow:hidden;\r\n margin:0 0 0 1px;\r\n width:100%;\r\n height:2px;\r\n}         \r\n.ymp-tray-body3\r\n{             \r\n display:block;\r\n width:100%;\r\n height:100%;\r\n}\r\n#ymp-tray ul#ymp-tray-list\r\n{\r\n position:absolute;\r\n top:24px;\r\n left:0;\r\n width:100%;\r\n height:180px;\r\n margin:0; \r\n padding:0;\r\n overflow-x:hidden;\r\n overflow-y:hidden; /* this gets switched to auto via JS */\r\n}\r\n#ymp-tray ul li\r\n{                         \r\n position:relative;\r\n overflow:hidden;\r\n color:#FFF;\r\n}\r\n#ymp-tray ul li a\r\n{\r\n display:block;\r\n overflow:hidden;      \r\n white-space:nowrap;\r\n width:100%;\r\n margin:0;\r\n padding:0 0 0 15px;\r\n text-decoration:none;\r\n line-height:20px;\r\n font-size:11px;\r\n text-overflow:ellipsis;\r\n}\r\n#ymp-tray ul li a:hover,\r\n#ymp-tray ul li a.ymp-tray-track-focus\r\n{\r\n background-color:#9E9E9E;\r\n color:#000;\r\n}\r\n#ymp-tray ul li a.playing\r\n{\r\n background-color:#889B64;\r\n}\r\n#ymp-tray ul.ymp-nested-list\r\n{                  \r\n position:relative;\r\n width:100%;\r\n height:auto;\r\n overflow:hidden;\r\n}\r\n#ymp-tray ul.ymp-nested-list a.ymp-tray-track\r\n{\r\n padding-left:44px;\r\n}\r\n#ymp-tray #ymp-btn-tray\r\n{\r\n position:absolute;\r\n display:block;\r\n top:0;\r\n right:0;\r\n height:18px;     \r\n padding:0 3px 0 3px;\r\n color:#FFF;                  \r\n text-decoration:none;\r\n font-family:Arial, Helvetica;\r\n font-size:9px;\r\n font-weight:bold;\r\n text-transform:uppercase;\r\n cursor:pointer; \r\n}\r\n#ymp-tray #ymp-btn-tray em\r\n{\r\n display:block;\r\n position:relative;\r\n overflow:hidden;\r\n float:left; /* For IE */\r\n height:18px;   \r\n line-height:9px;\r\n -line-height:8px; \r\n padding:4px 15px 0 5px;\r\n font-style:normal;\r\n font-weight:bold;\r\n}   \r\n#ymp-tray .ymp-up-arrow,\r\n#ymp-tray .ymp-down-arrow,\r\n#ymp-tray .ymp-right-arrow\r\n{          \r\n display:block;\r\n position:absolute;\r\n overflow:hidden;\r\n top:5px;\r\n right:6px;     \r\n width:7px;\r\n height:6px;\r\n background-position:-135px -80px;\r\n z-index:2;\r\n}                                   \r\n#ymp-tray .ymp-up-arrow\r\n{\r\n background-position:-135px -86px;\r\n}\r\n#ymp-tray .ymp-right-arrow\r\n{                      \r\n width:6px;\r\n height:7px;\r\n background-position:-135px -92px;\r\n}\r\n#ymp-tray ul#ymp-tray-list .ymp-down-arrow, #ymp-tray ul#ymp-tray-list .ymp-right-arrow\r\n{\r\n top:7px;\r\n left:5px;                         \r\n right:auto;\r\n}\r\n.ymp-btn-tray-body1\r\n{           \r\n display:block;\r\n position:absolute;\r\n top:3px;\r\n left:0;\r\n width:1px;\r\n height:100%;   \r\n}\r\n.ymp-btn-tray-body2\r\n{           \r\n display:block;\r\n position:absolute;\r\n top:1px;\r\n left:1px;\r\n width:2px;\r\n height:100%;   \r\n}\r\n.ymp-btn-tray-body3\r\n{           \r\n display:block;\r\n position:absolute;\r\n top:3px;\r\n right:0;\r\n width:1px;\r\n height:100%;\r\n}\r\n.ymp-btn-tray-body4\r\n{           \r\n display:block;\r\n position:absolute;\r\n top:1px;\r\n right:1px;\r\n width:2px;\r\n height:100%;   \r\n}\r\n.ymp-pix-bl\r\n{\r\n bottom:0;\r\n left:-1px;\r\n}\r\n\r\n/* Buttons and Links */                           \r\n#ymp-body #ymp-control\r\n{\r\n position:absolute;\r\n top:13px;\r\n left:49px;\r\n width:104px;\r\n height:44px;\r\n z-index:2;\r\n background-position:-525px -113px;\r\n}\r\n#ymp-body a.ymp-btn-play, #ymp-body a.ymp-btn-pause\r\n{\r\n display:block;\r\n position:absolute;\r\n top:2px;\r\n left:32px;\r\n width:35px;\r\n height:33px;\r\n cursor:pointer;\r\n background-position:-50px 0;\r\n z-index:2;\r\n text-indent:-9000px;\r\n}\r\n#ymp-body a:hover.ymp-btn-play\r\n{\r\n background-position:-50px -34px;\r\n}\r\n#ymp-body a:active.ymp-btn-play\r\n{\r\n background-position:-50px -68px;\r\n}\r\n#ymp-body a.ymp-btn-play-disabled,\r\n#ymp-body a:hover.ymp-btn-play-disabled,\r\n#ymp-body a:active.ymp-btn-play-disabled\r\n{\r\n cursor:default;\r\n background-position:-50px -99px;\r\n}\r\n#ymp-body a.ymp-btn-pause\r\n{\r\n background-position:-84px 0;\r\n}\r\n#ymp-body a:hover.ymp-btn-pause\r\n{\r\n background-position:-84px -34px;\r\n}\r\n#ymp-body a:active.ymp-btn-pause\r\n{\r\n background-position:-84px -68px;\r\n}\r\n#ymp-body a.ymp-btn-pause-disabled,\r\n#ymp-body a:hover.ymp-btn-pause-disabled,\r\n#ymp-body a:active.ymp-btn-pause-disabled\r\n{\r\n cursor:default;\r\n background-position:-81px -99px;\r\n}\r\n#ymp-body a.ymp-btn-next, #ymp-body a.ymp-btn-prev\r\n{\r\n display:block;\r\n position:absolute;\r\n top:7px;\r\n left:72px;\r\n width:25px;\r\n height:25px;\r\n cursor:pointer;\r\n background-position:-25px 0;\r\n z-index:2;\r\n text-indent:-1000px;\r\n}\r\n#ymp-body a:hover.ymp-btn-next\r\n{\r\n background-position:-25px -25px;\r\n}\r\n#ymp-body a:active.ymp-btn-next\r\n{\r\n background-position:-25px -51px; \r\n}\r\n#ymp-body a.ymp-btn-next-disabled,\r\n#ymp-body a:hover.ymp-btn-next-disabled,\r\n#ymp-body a:active.ymp-btn-next-disabled\r\n{\r\n cursor:default;\r\n background-position:-25px -75px;\r\n}\r\n#ymp-body a.ymp-btn-prev\r\n{\r\n left:3px;\r\n background-position:0 0;\r\n}\r\n#ymp-body a:hover.ymp-btn-prev\r\n{\r\n background-position:0 -25px;\r\n}\r\n#ymp-body a:active.ymp-btn-prev\r\n{\r\n background-position:0 -51px;\r\n}\r\n#ymp-body a.ymp-btn-prev-disabled,\r\n#ymp-body a:hover.ymp-btn-prev-disabled,\r\n#ymp-body a:active.ymp-btn-prev-disabled\r\n{\r\n cursor:default;\r\n background-position:0 -75px;\r\n}\r\n#ymp-body #ymp-btn-min\r\n{\r\n display:block;\r\n overflow:hidden;\r\n position:absolute;\r\n top:0;\r\n right:10px;\r\n width:15px;\r\n height:62px;\r\n cursor:pointer;\r\n text-indent:-1000px;\r\n z-index:2;    \r\n background-position:-159px -35px;\r\n}\r\n#ymp-body #ymp-btn-max\r\n{\r\n display:block;\r\n overflow:hidden;\r\n position:absolute;\r\n top:0;\r\n left:0;\r\n width:24px;\r\n height:62px;\r\n cursor:pointer;\r\n text-indent:-1000px;\r\n z-index:2;                       \r\n}\r\n#ymp-body #ymp-btn-max span\r\n{\r\n display:block;\r\n overflow:hidden;\r\n position:absolute;\r\n top:23px;\r\n left:9px;\r\n width:8px;\r\n height:17px;\r\n background-position:-119px -80px;\r\n}\r\n#ymp-body #ymp-btn-max span.ymp-animarrow\r\n{\r\n background:url(http://l.yimg.com/us.yimg.com/i/us/mus/ymwp/mediaplayer-animarrow-2.0.31.gif) no-repeat 0 0;\r\n}\r\n.ymp-player-max #ymp-body #ymp-btn-max,\r\n.ymp-player-min #ymp-body #ymp-btn-min, .ymp-player-min #ymp-body #ymp-btn-close, .ymp-player-min #ymp-body #ymp-btn-pop,\r\n.ymp-player-hidden\r\n{\r\n display:none;\r\n}\r\n#ymp-body a#ymp-btn-close, #ymp-body a#ymp-btn-pop\r\n{\r\n display:block;\r\n overflow:hidden;\r\n position:absolute;\r\n top:2px;\r\n right:27px;\r\n width:14px;\r\n height:14px;\r\n cursor:pointer;\r\n text-indent:-1000px;\r\n z-index:2;    \r\n background-position:-609px 0;\r\n}\r\n#ymp-body a:hover#ymp-btn-close\r\n{\r\n background-position:-609px -14px;\r\n}   \r\n#ymp-body a:active#ymp-btn-close\r\n{\r\n background-position:-609px -28px;\r\n}\r\n#ymp-body a#ymp-btn-pop\r\n{\r\n top:18px;\r\n background-position:-595px 0;\r\n}\r\n#ymp-body a:hover#ymp-btn-pop\r\n{\r\n background-position:-595px -14px;\r\n}   \r\n#ymp-body a:active#ymp-btn-pop\r\n{\r\n background-position:-595px -28px;\r\n}\r\n#ymp-body a#ymp-btn-target\r\n{\r\n display:block;\r\n float:right;\r\n width:16px;\r\n height:16px;\r\n cursor:pointer;\r\n z-index:2;\r\n text-indent:-9000px;\r\n background-position:-623px 0;\r\n}\r\n#ymp-body a:hover#ymp-btn-target\r\n{\r\n background-position:-623px -16px;\r\n}\r\n#ymp-body a:active#ymp-btn-target\r\n{\r\n background-position:-623px -32px;\r\n}\r\n#ymp-body .ymp-error-icon, #ymp-tray .ymp-error-icon\r\n{\r\n display:block;\r\n width:16px;\r\n height:16px;\r\n overflow: hidden;\r\n cursor:pointer;\r\n z-index:2;\r\n text-indent:-9000px;\r\n background-position:-150px 0;\r\n}\r\n#ymp-tray .ymp-error-icon\r\n{\r\n position:absolute;\r\n top:2px;\r\n right:3px;\r\n}\r\na.ymp-btn-page-play, a.ymp-btn-page-pause\r\n{\r\n position:relative !important;\r\n padding-left:20px !important;\r\n outline:none !important;\r\n}   \r\na.ymp-btn-page-play em.ymp-skin,\r\na.ymp-btn-page-pause em.ymp-skin\r\n{   \r\n display:block;\r\n position:absolute;           \r\n overflow:hidden;\r\n /*bottom:15%;*/       \r\n    top:15%;\r\n *top:0.22em;\r\n left:0;\r\n width:14px;\r\n height:14px;    \r\n background-position:-676px 0;\r\n cursor:pointer;\r\n}\r\na:hover.ymp-btn-page-play em.ymp-skin\r\n{\r\n background-position:-676px -14px;\r\n}\r\na:active.ymp-btn-page-play em.ymp-skin\r\n{\r\n background-position:-676px -28px;\r\n}\r\na.ymp-btn-page-pause em.ymp-skin\r\n{\r\n background-position:-662px 0;\r\n}\r\na:hover.ymp-btn-page-pause em.ymp-skin\r\n{\r\n background-position:-662px -14px;\r\n}\r\na:active.ymp-btn-page-pause em.ymp-skin\r\n{\r\n background-position:-662px -28px;\r\n}                    \r\na.ymp-btn-page-target em.ymp-skin,\r\na:hover.ymp-btn-page-target em.ymp-skin,\r\na:active.ymp-btn-page-target em.ymp-skin\r\n{\r\n background:url(http://l.yimg.com/us.yimg.com/i/us/mus/ymwp/mediaplayer-findlink-2.0.31.gif) no-repeat 0 0;\r\n}              \r\n#ymp-body a.ymp-btn\r\n{\r\n display:block;\r\n position:relative;\r\n height:16px;                     \r\n margin:0 0 0 7px;                \r\n padding:0 7px 0 0;\r\n z-index:2;    \r\n font-size:11px;\r\n line-height:16px;\r\n cursor:pointer;\r\n background-position:100% -48px;\r\n}\r\n#ymp-body a.ymp-btn em\r\n{\r\n display:block;     \r\n overflow:hidden;\r\n position:absolute;\r\n top:0;\r\n left:-7px;\r\n width:7px;\r\n height:100%;\r\n background-position:-525px -48px;\r\n} \r\n#ymp-body a:hover.ymp-btn\r\n{               \r\n text-decoration:none;\r\n background-position:100% -64px;\r\n}\r\n#ymp-body a:hover.ymp-btn em\r\n{\r\n background-position:-525px -64px;\r\n}\r\n#ymp-body a:active.ymp-btn\r\n{\r\n background-position:100% -80px;\r\n}\r\n#ymp-body a:active.ymp-btn em\r\n{\r\n background-position:-525px -80px;\r\n}   \r\n#ymp-body #ymp-btn-buy\r\n{\r\n margin-right:2px;\r\n}\r\n#ymp-body .ymp-icon-buy\r\n{\r\n display:block;\r\n position:relative;\r\n top:1px;\r\n left:-1px;\r\n width:17px;\r\n height:13px;       \r\n background-position:-142px -79px;\r\n}\r\n#ymp-body a.ymp-btn-alt\r\n{\r\n display:block;\r\n position:relative;\r\n height:16px;                     \r\n margin:0 0 0 7px;                \r\n padding:0 7px 0 0;\r\n z-index:2;    \r\n font-size:11px;\r\n font-weight:normal;\r\n color:#666;\r\n line-height:16px;\r\n cursor:pointer;\r\n background-position:100% -64px;\r\n}\r\n#ymp-body a.ymp-btn-alt em\r\n{\r\n display:block;     \r\n overflow:hidden;\r\n position:absolute;\r\n top:0;\r\n left:-7px;\r\n width:7px;\r\n height:100%;\r\n background-position:-525px -64px;\r\n}\r\n#ymp-body a:hover.ymp-btn-alt\r\n{                \r\n text-decoration:none;\r\n}                    \r\n#ymp-body .ymp-meta-box\r\n{\r\n position:relative;\r\n line-height:13px;\r\n}\r\n#ymp-body #ymp-meta-track-title, #ymp-body #ymp-meta-album-title, #ymp-body #ymp-meta-artist-title\r\n{                  \r\n display:block;\r\n overflow:hidden;          \r\n position:absolute; \r\n top:0;\r\n left:0;\r\n width:100%;\r\n font-size:12px;\r\n font-weight:bold;\r\n white-space:nowrap;\r\n text-overflow:ellipsis;\r\n -o-text-overflow:ellipsis; /* Opera 9 */ \r\n}\r\n#ymp-body #ymp-meta-album-title\r\n{\r\n top:1px;\r\n font-size:11px;\r\n font-weight:normal;\r\n}                                                               \r\n#ymp-body #ymp-meta-artist-title\r\n{\r\n top:18px;\r\n font-size:11px;\r\n font-weight:normal;\r\n}\r\n#ymp-body window \r\n{\r\n width:100%;\r\n -moz-user-focus:normal;\r\n -moz-user-select:text;\r\n}\r\n#ymp-body description \r\n{\r\n -moz-user-focus:normal;\r\n -moz-user-select:text;\r\n}                              \r\n#ymp-body #ymp-meta-image\r\n{         \r\n position:absolute;\r\n display:block;\r\n overflow:hidden;\r\n top:3px;\r\n left:2px;\r\n width:46px;\r\n height:46px;                                                                                                 \r\n border:1px solid #ADACAC;\r\n background:url(http://l.yimg.com/us.yimg.com/i/us/mus/ymwp/mediaplayer-default-album.gif) no-repeat 0 0;\r\n cursor:pointer;\r\n}                     \r\n/* Relevance section */ \r\n#ymp-body #ymp-relevance {\r\n position:absolute;\r\n left:527px;\r\n top:0;\r\n width:120px;\r\n height:62px;\r\n overflow:hidden;\r\n z-index:2;\r\n}\r\n#ymp-body #ymp-getplayer\r\n{\r\n display:block;\r\n position:absolute;\r\n top:18px;\r\n left:3px;\r\n width:121px;\r\n color:#3D9AD0;\r\n font-size:13px;\r\n line-height:14px;\r\n font-weight:bold;\r\n text-align:center;\r\n z-index:2;\r\n}\r\n#ymp-body #ymp-getlyrics,\r\n#ymp-body #ymp-watchvideo\r\n{\r\n display:none;\r\n position:absolute;\r\n top:16px;\r\n left:17px;\r\n color:#3D9AD0;\r\n font-size:13px;\r\n font-weight:bold;\r\n z-index:2;\r\n}\r\n#ymp-body #ymp-getlyrics em,\r\n#ymp-body #ymp-watchvideo em\r\n{\r\n font-size:11px;\r\n font-style:normal;\r\n font-weight:normal;\r\n color:#686868;\r\n}\r\n#ymp-body #ymp-getlyrics span,\r\n#ymp-body #ymp-watchvideo span\r\n{                            \r\n display:block;\r\n position:absolute;\r\n overflow:hidden;\r\n top:17px;\r\n left:63px;       \r\n width:14px;\r\n height:13px;\r\n background-position:-648px 0;\r\n cursor:pointer;\r\n}\r\n#ymp-body a#ymp-getlyrics:hover em,\r\n#ymp-body a#ymp-watchvideo:hover em\r\n{\r\n color:#3D9AD0;\r\n}\r\n#ymp-body a#ymp-getlyrics:hover span,\r\n#ymp-body a#ymp-watchvideo:hover span\r\n{\r\n background-position:-648px -13px;   \r\n}\r\n\r\n/* Volume Control */\r\n#ymp-body #ymp-volume\r\n{\r\n position:absolute;\r\n top:12px;\r\n left:158px;\r\n width:12px;\r\n height:39px;                     \r\n z-index:2;\r\n background-position:-125px -21px;\r\n}\r\n#ymp-body #ymp-volume-cover\r\n{\r\n position:absolute;\r\n overflow:hidden;\r\n bottom:0;\r\n left:0;\r\n width:100%;\r\n height:23px; /* (volume-cover span height) - (volume-thumb's top) */\r\n}\r\n#ymp-body #ymp-volume-cover span\r\n{\r\n display:block;\r\n position:absolute;\r\n bottom:0;\r\n left:0;\r\n width:100%;\r\n height:39px;\r\n background-position:-140px -21px;\r\n}\r\n#ymp-body a#ymp-volume-thumb\r\n{       \r\n display:block;      \r\n position:absolute;\r\n overflow:hidden;\r\n top:16px; /* Initial position of volume-thumb, this does not initialize the actual volume however */\r\n left:0;\r\n width:13px;\r\n height:7px;\r\n text-indent:-1000px;\r\n background-position:-119px 0;\r\n /* cursor:default; */\r\n}\r\n#ymp-body a:hover#ymp-volume-thumb\r\n{\r\n background-position:-119px -7px;\r\n}\r\n#ymp-body a:active#ymp-volume-thumb\r\n{                                   .\r\n background-position:-119px -14px;\r\n}\r\n\r\n/* Miscellaneous */\r\n#ymp-error-bubble\r\n{             \r\n display:none;\r\n position:absolute;\r\n top:0;\r\n left:0;              \r\n z-index:10000;\r\n width:200px;\r\n background-color:#FFF;\r\n border:1px solid #999;\r\n}\r\n#ymp-error-msg\r\n{\r\n margin:10px;\r\n font-size:11px;\r\n}                     \r\n.ymp-error-tail\r\n{\r\n display:block;\r\n position:absolute;\r\n bottom:-18px;\r\n left:0;\r\n width:21px;\r\n height:18px;\r\n background-position:-158px -17px;\r\n}\r\n#ymp-secret-bubble\r\n{             \r\n display:none;\r\n position:absolute;\r\n top:0;\r\n left:0;              \r\n z-index:10000;\r\n width:400px;\r\n background-color:#FFF;\r\n border:1px solid #999;\r\n}\r\n#ymp-secret-msg\r\n{\r\n margin:10px;\r\n font-size:11px;\r\n}\r\n#ymp-secret-msg #ymp-secret-msg-header\r\n{\r\n font-weight:bold;\r\n font-style:normal;\r\n text-align:center;\r\n position:relative;\r\n width:100%;\r\n}\r\n#ymp-secret-msg table\r\n{\r\n width:100%;\r\n}\r\n#ymp-secret-msg th, #ymp-secret-msg td\r\n{\r\n text-align:center;\r\n}\r\n#ymp-secret-bubble a#ymp-btn-close-secret\r\n{\r\n display:block;\r\n overflow:hidden;\r\n position:absolute;\r\n top:2px;\r\n right:2px;\r\n width:14px;\r\n height:14px;\r\n cursor:pointer;\r\n text-indent:-1000px;\r\n z-index:2;    \r\n background-position:-609px 0;\r\n}\r\n#ymp-secret-bubble a:hover#ymp-btn-close-secret\r\n{\r\n background-position:-609px -14px;\r\n}   \r\n#ymp-secret-bubble a:active#ymp-btn-close-secret\r\n{\r\n background-position:-609px -28px;\r\n}\r\n\r\n/* Rhapsody stuff */\r\n#ymp-body .ymp-rhap-powered\r\n{\r\n display:block;\r\n position:relative;\r\n overflow:hidden; \r\n top:-2px;\r\n width:107px;\r\n height:13px;\r\n margin:0 0 0 4px;\r\n text-indent:-9000px;\r\n background:url(http://l.yimg.com/us.yimg.com/i/us/mus/ymwp/mediaplayer-rhapsody-2.0.31.png) no-repeat 0 0;\r\n}\r\n#ymp-body .ymp-rhap-stickwall .ymp-rhap-powered\r\n{            \r\n position:absolute;\r\n top:3px;\r\n right:5px;\r\n margin:0;\r\n}\r\n#ymp-body #ymp-rhap-brand                                        \r\n{\r\n display:none;\r\n}\r\n#ymp-body .ymp-rhap-stickwall h2\r\n{                 \r\n position:absolute;\r\n top:6px;\r\n left:15px;\r\n margin:0;\r\n padding:0;\r\n font-size:14px;\r\n color:#58A9CF;\r\n width:100%;\r\n}                    \r\n#ymp-body #ymp-rhap-stickwall-action                                                      \r\n{\r\n position:absolute;\r\n bottom:6px;\r\n left:15px;\r\n}\r\n#ymp-body #ymp-rhap-stickwall-action .ymp-btn-alt\r\n{\r\n float:left;\r\n margin-right:5px;\r\n}\r\n#ymp-body #ymp-rhap-getunlimited\r\n{          \r\n display:none;\r\n position:absolute;\r\n top:11px;\r\n right:0;   \r\n max-height:14px;\r\n overflow:hidden;\r\n font-size:10px;   \r\n font-weight:normal;\r\n color:#3D9AD0;\r\n}      \r\n#ymp-body #ymp-rhap-playinfo\r\n{                 \r\n display:none;\r\n position:absolute;        \r\n top:14px;\r\n *top:8px;\r\n left:17px;\r\n width:92px;\r\n font-weight:bold; \r\n color:#686868; \r\n line-height:11px;\r\n *line-height:24px;\r\n text-align:right;\r\n z-index:2;\r\n}           \r\n#ymp-body #ymp-rhap-playinfo a\r\n{\r\n display:block;                   \r\n margin:0;\r\n padding:2px 0 0 0;\r\n *padding:1px 0 0 0;\r\n font-size:11px;   \r\n font-weight:normal;\r\n *line-height:13px;\r\n color:#3D9AD0;\r\n}\r\n#ymp-body #ymp-rhap-playinfo a em\r\n{               \r\n font-style:normal;\r\n font-size:14px;\r\n}    \r\n#ymp-body #ymp-rhap-playinfo a:hover\r\n{                       \r\n text-decoration:underline;\r\n}\r\n#ymp-body #ymp-rhap-playcount\r\n{   \r\n margin:0 5px 0 0;            \r\n font-size:30px;\r\n font-weight:bold;\r\n color:#FFF;\r\n}\r\n#ymwp-contplay-form {\r\n    height:0;\r\n    width:0;\r\n    margin:0;\r\n    padding:0;\r\n}\r\n";
+
 if (YAHOO.mediaplayer.goosecss && YAHOO.mediaplayer.goosecss.length > 0) {
     var style = document.createElement("style");
     style.setAttribute("type", "text/css");
@@ -658,6 +659,7 @@ YAHOO.ympyui.register("animation", YAHOO.ympyui.util.Anim, {
     version: "2.5.1",
     build: "984"
 });
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 if (typeof YMPParams === "undefined") {
     YMPParams = {};
@@ -728,6 +730,7 @@ for (var props in YMPParams) {
     YAHOO.mediaplayer.YMPParams[props] = YMPParams[props];
 }
 YMPParams = null;
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 String.prototype.trim = function () {
     return this.replace(/^\s+|\s+$/g, '');
@@ -1003,6 +1006,7 @@ function () {
         }
     };
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.SWFObject = function () {
     var UNDEF = "undefined",
@@ -1556,6 +1560,7 @@ YAHOO.mediaplayer.SWFObject = function () {
         hasPlayerVersion: hasPlayerVersion
     };
 }();
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.SWFProxy = new
 function () {
@@ -1734,6 +1739,7 @@ YAHOO.ympyui.util.Event.addListener(window, 'unload', function () {
         window.CollectGarbage();
     }
 });
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.EventManager = function (owner, eventTypes) {
     this.getOwner = function () {
@@ -1791,6 +1797,7 @@ YAHOO.mediaplayer.EventManager.prototype.subscribe = function (obj, eventTypes) 
         throw new Error('ERROR in ' + this + '.subscribe(). ' + ex.message);
     }
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.ControllerBase = function ControllerBase() {
     this.EventManager = new YAHOO.mediaplayer.EventManager(this);
@@ -1809,6 +1816,7 @@ YAHOO.mediaplayer.ControllerBase.prototype.handleEvent = function handleEvent(ev
         throw new Error('ERROR in ' + this + '.handleEvent(evType:"' + evType + '"). ' + ex.message);
     }
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.BaseObject = function BaseObject(controller, subscribeToControllersEvents) {
     try {
@@ -1853,6 +1861,7 @@ YAHOO.mediaplayer.BaseObject.prototype.initController = function (controller) {
         throw new Error('ERROR in ' + this + '.initController(). ' + ex.message);
     }
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.Controller = function () {
     YAHOO.mediaplayer.Controller.superclass.constructor.call(this, arguments);
@@ -1938,6 +1947,7 @@ YAHOO.mediaplayer.Controller.prototype.onWindowUnload = function (eventObj) {
         }
     }
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.Parser = function (controller) {
     var subscribeToControllersEvents = [];
@@ -1974,6 +1984,7 @@ YAHOO.mediaplayer.Parser.MimeTypes = {
     yahoo: "audio/yahoo"
 };
 YAHOO.mediaplayer.Parser.prototype.parse = function (domElement) {
+log("inside parser");
     try {
         var mediaTracks = [];
         var anchorCollection = this.getAnchors(domElement);
@@ -2110,6 +2121,7 @@ YAHOO.mediaplayer.Parser.prototype.sortByTabIndex = function (mediaTracks) {
 YAHOO.mediaplayer.Parser.prototype.checkForLocalHost = function (url) {
     return (url.toLowerCase().indexOf("http://localhost") >= 0);
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.PlaylistManager = function (controller) {
     var subscribeToControllersEvents = ['onPlayRequest', 'onPauseRequest', 'onStopRequest', 'onPreviousRequest', 'onNextRequest', 'onPlayStateChange', 'onMediaUpdate', 'onPlaylistUpdate'];
@@ -2315,6 +2327,7 @@ YAHOO.mediaplayer.PlaylistManager.prototype.insert = function (mediaTracks, inde
         this.add(mediaTracks);
     }
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.MediaResolver = function (controller) {
     var subscribeToControllersEvents = [];
@@ -2760,6 +2773,7 @@ YAHOO.mediaplayer.MediaResolver.prototype.parseTextNode = function (elm) {
         return "";
     }
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.Playlist = function (controller, obj) {
     var subscribeToControllersEvents = [];
@@ -2783,6 +2797,7 @@ YAHOO.mediaplayer.Playlist.prototype.refByName = 'playlist';
 YAHOO.mediaplayer.Playlist.prototype.toString = function () {
     return 'YAHOO.mediaplayer.Controller.' + this.refByName;
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.Media = function (controller) {
     var subscribeToControllersEvents = [];
@@ -2809,6 +2824,7 @@ YAHOO.mediaplayer.Media.prototype.setProperties = function (obj) {
     }
     this.EventManager.onMediaUpdate.fire(this);
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer.Media');
 YAHOO.mediaplayer.Media.Track = function (controller) {
     YAHOO.mediaplayer.Media.Track.superclass.constructor.call(this, controller);
@@ -2821,6 +2837,7 @@ YAHOO.mediaplayer.Media.Track.prototype.refByName = 'track';
 YAHOO.mediaplayer.Media.Track.prototype.toString = function () {
     return 'YAHOO.mediaplayer.Controller.' + this.refByName;
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.MediaEngine = function (controller) {
     var subscribeToControllersEvents = ['onPlayStateChange', 'onVolumeChangeRequest'];
@@ -3292,6 +3309,7 @@ YAHOO.mediaplayer.FlashEngine.prototype.getSWF = function () {
     }
     return this.player;
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.WMPEngine = function (controller) {
     try {
@@ -3457,6 +3475,7 @@ YAHOO.mediaplayer.WMPEngine.prototype.onError = function () {
     } catch(ex) {}
     this.onPlayStateChange(8);
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.WMPFF3Engine = function (controller) {
     try {
@@ -3813,6 +3832,7 @@ YAHOO.mediaplayer.QTEngine.prototype.onVolumeChangeHandler = function (eventObj)
         YAHOO.mediaplayer.Controller.qtengine.EventManager.onVolumeChange.fire(YAHOO.mediaplayer.Controller.qtengine.getVolume());
     }
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.RhapsodyEngine = function (controller) {
     var subscribeToControllersEvents = [];
@@ -3982,6 +4002,7 @@ YAHOO.mediaplayer.RhapsodyEngine.prototype.getSWF = function () {
     }
     return this.player;
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.Rhapsody = function (controller) {
     var subscribeToControllersEvents = [];
@@ -4026,6 +4047,7 @@ YAHOO.mediaplayer.Rhapsody.rightsFlags = {
     DOWNLOAD_NONPORTABLE: 32,
     PURCHASEDRMFREE: 512
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.ymu = function (controller) {
     var subscribeToControllersEvents = [];
@@ -4047,6 +4069,7 @@ YAHOO.mediaplayer.ymu.rightsFlags = {
     DOWNLOAD: 32,
     DOANLOADALBUM: 64
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.FlvEngine = function (controller) {
     var subscribeToControllersEvents = [];
@@ -4200,6 +4223,7 @@ if (YAHOO.mediaplayer.DisplayStrings == null) {
         }
     };
 }
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.View = function (controller) {
     var subscribeToControllersEvents = ['onPlaylistUpdate', 'onPlayStateChange', 'onCurrentMediaSet', 'onMediaUpdate', 'onMediaProgress', 'onError', 'onVolumeChange'];
@@ -5426,6 +5450,7 @@ YAHOO.mediaplayer.View.prototype.hideSecretMsg = function (e) {
         elm = null;
     }
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.ViewMarkup = {
     body: '  <div id="ymp-body" class="ymp-skin">   <h2>' + YAHOO.mediaplayer.DisplayStrings.ui.HDR_MAIN + '</h2>   <a id="ymp-btn-max" href="#"><span class="ymp-skin" title="Maximize the player"></span></a>   <div id="ymp-yahoo-logo" class="ymp-skin" oncontextmenu="return false;"></div>   <div id="ymp-control" class="ymp-skin">    <h3>' + YAHOO.mediaplayer.DisplayStrings.ui.HDR_CONTROLS + '</h3>    <a id="ymp-prev" class="ymp-btn-prev ymp-skin" href="#" title="Previous track">Previous</a>    <a id="ymp-play" class="ymp-btn-play ymp-skin" href="#" title="Play/pause track">Play</a>    <a id="ymp-next" class="ymp-btn-next ymp-skin" href="#" title="Next track">Next</a>   </div>   <div id="ymp-volume" class="ymp-skin">    <div id="ymp-volume-cover"><span class="ymp-skin"></span></div>    <a id="ymp-volume-thumb" class="ymp-skin" href="#" title="Adjust volume">Vol</a>   </div>   <div id="ymp-meta" class="ymp-skin">    <div id="ymp-stickwall">     <div class="ymp-stickwall-body1"></div>     <div class="ymp-stickwall-body2"></div>     <div class="ymp-stickwall-body3"></div>     <div class="ymp-stickwall-body4"></div>     <div class="ymp-stickwall-body5"></div>     <div class="ymp-stickwall-gradient ymp-skin"></div>     <div id="ymp-rhap-stickwall">      <a class="ymp-rhap-powered" href="#">powered by Rhapsody</a>      <h2>Keep the music going</h2>      <div id="ymp-rhap-stickwall-action">       <a id="ymp-rhap-continue" href="#" class="ymp-btn-alt ymp-skin">Continue enjoying the music<em class="ymp-skin"></em></a>       <a href="http://offer.rhapsody.com/yahooplayer/?ocode=' + YAHOO.mediaplayer.YMPParams.rhappcode + '&pcode=' + YAHOO.mediaplayer.YMPParams.rhappcode + '&cpath=unlplaylink&rsrc=' + ((YAHOO.mediaplayer.YMPParams.ypartner && YAHOO.mediaplayer.YMPParams.ypartner.length > 0) ? YAHOO.mediaplayer.YMPParams.ypartner : 'yahoo') + '" target="_blank" class="ymp-btn-alt ymp-skin">Get Rhapsody Unlimited Now<em class="ymp-skin"></em></a>      </div>       </div>     <div id="ymp-error-stickwall">      <h2><span class="ymp-skin"></span><span id="ymp-critical-error-msg"></span></h2>       </div>    </div>    <a id="ymp-meta-image" href="#" target="_blank"><img src="http://l.yimg.com/us.yimg.com/i/us/mus/ymwp/mediaplayer-default-album.gif" width="46" height="46"/></a>    <table id="ymp-meta-top" cellspacing="0" cellpadding="0" border="0">     <tr>      <td width="100%"><div class="ymp-meta-box"><a id="ymp-meta-track-title" class="ymp-color-text-main" href="#" target="_blank"></a><a id="ymp-meta-artist-title" class="ymp-color-text-main" href="#" target="_blank"></a>&nbsp;</div></td>      <td><a id="ymp-current-media-error" class="ymp-error-icon ymp-skin" href="#" style="display:none;">Error</a></td>      <td>       <div class="ymp-meta-box">        <a id="ymp-rhap-getunlimited" href="http://offer.rhapsody.com/yahooplayer/?ocode=' + YAHOO.mediaplayer.YMPParams.rhappcode + '&pcode=' + YAHOO.mediaplayer.YMPParams.rhappcode + '&cpath=unlplaylink&rsrc=' + ((YAHOO.mediaplayer.YMPParams.ypartner && YAHOO.mediaplayer.YMPParams.ypartner.length > 0) ? YAHOO.mediaplayer.YMPParams.ypartner : 'yahoo') + '" target="_blank">get unlimited plays <em>&raquo;</em></a>        <a id="ymp-rhap-brand" class="ymp-rhap-powered" href="http://offer.rhapsody.com/yahooplayer/?ocode=' + YAHOO.mediaplayer.YMPParams.rhappcode + '&pcode=' + YAHOO.mediaplayer.YMPParams.rhappcode + '&cpath=powerby&rsrc=' + ((YAHOO.mediaplayer.YMPParams.ypartner && YAHOO.mediaplayer.YMPParams.ypartner.length > 0) ? YAHOO.mediaplayer.YMPParams.ypartner : 'yahoo') + '" target="_blank">powered by Rhapsody</a>       </div>      </td>     </tr>    </table>    <table id="ymp-meta-bottom" cellspacing="0" cellpadding="0" border="0">     <tr>      <td width="100%"><div class="ymp-meta-box"><a id="ymp-meta-album-title" class="ymp-color-text-main" href="#" target="_blank"></a>&nbsp;</div></td>      <td><div id="ymp-meta-progress" class="ymp-color-text-main"></div></td>      <td>       <a id="ymp-btn-buy" class="ymp-btn ymp-skin" href="#" target="_blank" title="Buy track">        <span class="ymp-skin ymp-icon-buy"></span>        <em class="ymp-skin"></em>       </a>      </td>      <td>       <div class="ymp-meta-box">        <a id="ymp-btn-target" class="ymp-skin" href="#" title="Find track on page">Focus on current media</a>       </div>      </td>     </tr>    </table>   </div>   <div id="ymp-relevance">    <div id="ymp-rhap-playinfo" class="ymp-carousel-item">     <span id="ymp-rhap-playcount">24</span><span>plays left</span>     <a href="http://offer.rhapsody.com/yahooplayer/?ocode=' + YAHOO.mediaplayer.YMPParams.rhappcode + '&pcode=' + YAHOO.mediaplayer.YMPParams.rhappcode + '&cpath=playcntlink&rsrc=' + ((YAHOO.mediaplayer.YMPParams.ypartner && YAHOO.mediaplayer.YMPParams.ypartner.length > 0) ? YAHOO.mediaplayer.YMPParams.ypartner : 'yahoo') + '" target="_blank">get unlimited plays learn how <em>&raquo;</em></a>    </div>    <a id="ymp-getplayer" class="ymp-carousel-item" href="' + ((YAHOO.mediaplayer.YMPParams["injected-by"] == "foxytunes-ff") ? "http://www.foxytunes.com/mediaplayers/yahoo-media-player/" : "http://mediaplayer.yahoo.com") + '" target="_blank">learn more about this player</a>    <a id="ymp-getlyrics" class="ymp-carousel-item" href="http://search.music.yahoo.com/search/?m=lyrics&p=" target="_blank">find the lyrics<br/><em>for this song</em><span class="ymp-skin"></span></a>    <a id="ymp-watchvideo" class="ymp-carousel-item" href="http://search.music.yahoo.com/search/?m=video&p=" target="_blank">find the video<br/><em>for this song</em><span class="ymp-skin"></span></a>   </div>   <a id="ymp-btn-close" href="#" class="ymp-skin" title="Close the player"></a>   <a id="ymp-btn-pop" href="#" class="ymp-skin" title="Continue playback in a separate window"></a>   <a id="ymp-btn-min" class="ymp-skin" href="#" title="Minimize the player"></a>   <div id="ymp-body-base">    <div id="ymp-body-strip" class="ymp-color-main"></div>    <div id="ymp-body-cap">     <div class="ymp-color-main ymp-pix-dark ymp-pix-tr1"></div>              <div class="ymp-color-main ymp-pix-light ymp-pix-tr2"></div>              <div class="ymp-color-main ymp-pix-light ymp-pix-tr3"></div>              <div class="ymp-color-main ymp-pix-dark ymp-pix-tr4"></div>     <div class="ymp-color-main ymp-cap-body1"></div>     <div class="ymp-color-main ymp-cap-body2"></div>     <div class="ymp-color-main ymp-pix-dark ymp-pix-br1"></div>              <div class="ymp-color-main ymp-pix-light ymp-pix-br2"></div>              <div class="ymp-color-main ymp-pix-light ymp-pix-br3"></div>              <div class="ymp-color-main ymp-pix-dark ymp-pix-br4"></div>    </div>   </div>  </div>  <form id="ymwp-contplay-form" name="contplayform" action="" method="post" target="ymediaplayer">   <input name="token" type="hidden" value="0"/>   <input name="seek" type="hidden" value="0"/>   <input name="vol" type="hidden" value="0"/>   <input name="trackhtml" type="hidden" value=""/>  </form> ',
@@ -5633,6 +5658,7 @@ YAHOO.MediaPlayer.setQueueViewState = function setQueueViewState(state) {
         return false;
     }
 };
+//
 new YAHOO.MediaPlayer();
 YAHOO.mediaplayer.ErrorDefinitions = {};
 YAHOO.mediaplayer.ErrorDefinitions.Types = {
@@ -5785,6 +5811,7 @@ YAHOO.mediaplayer.ErrorDefinitions.Codes = {
     }
 };
 YAHOO.mediaplayer.ErrorCollection = [];
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.Error = function (errorCode, args) {
     this.code = errorCode;
@@ -5808,6 +5835,7 @@ YAHOO.mediaplayer.PlaylistManager.prototype.toString = function () {
 YAHOO.mediaplayer.Error.prototype.getDisplayMessage = function () {
     return YAHOO.mediaplayer.Util.sprintf(YAHOO.mediaplayer.DisplayStrings.errors[this.code], this.displayMessageArgs);
 };
+//
 YAHOO.namespace('YAHOO.mediaplayer');
 YAHOO.mediaplayer.Logger = function media(controller) {
     try {
@@ -5849,5 +5877,5 @@ YAHOO.mediaplayer.Logger.prototype.logPlay = function logPlay(trackid) {
 };
 YAHOO.mediaplayer.Controller = new YAHOO.mediaplayer.Controller();
 YAHOO.mediaplayer.Controller.init();
-
+//
 log("loaded: YMP mediaplayer");
