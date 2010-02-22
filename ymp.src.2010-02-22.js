@@ -1,3 +1,12 @@
+/* Yahoo! Media Player Loader, Minified Build 2.0.31.  Copyright (c) 2008, Yahoo! Inc.  All rights reserved.
+ * Your use of this Yahoo! Media Player is subject to the Yahoo! Terms of Service
+ * located at http://info.yahoo.com/legal/us/yahoo/utos/utos-173.html.
+ */
+/*
+ * Modified by Eric Fehrenbacher on 2010-02-22
+ * doing this to get a non-minified version of the player code
+ * in order to extend the playlist parsing abilities
+ */
 function yui_Namespace() {
     var a = arguments,
         o = null,
