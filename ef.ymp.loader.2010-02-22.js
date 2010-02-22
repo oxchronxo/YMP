@@ -2039,7 +2039,7 @@ if (isMWPSupported === true) {
                 var suffix = '-min-2.0.31.js';
                 var path = "http://l.yimg.com/us.js.yimg.com/lib/mus/js/ymwp/";
 				var output = path + 'mediaplayer' + suffix;
-console.log("output:"+output);
+log("url for mediaplayer: " + output);
                 return output;
             };
             var playerScriptSrc = webplayerjs();
@@ -2058,3 +2058,5 @@ console.log("output:"+output);
         YAHOO.MediaPlayer.onAPIReady = new YAHOO.ympyui.util.CustomEvent("onAPIReady", null, false, YAHOO.ympyui.util.CustomEvent.FLAT);
     }
 }
+
+log("loaded: YMP loader");

@@ -5849,3 +5849,5 @@ YAHOO.mediaplayer.Logger.prototype.logPlay = function logPlay(trackid) {
 };
 YAHOO.mediaplayer.Controller = new YAHOO.mediaplayer.Controller();
 YAHOO.mediaplayer.Controller.init();
+
+log("loaded: YMP mediaplayer");
