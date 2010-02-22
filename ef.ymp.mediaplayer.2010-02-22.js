@@ -1988,7 +1988,6 @@ log("inside parser");
     try {
         var mediaTracks = [];
         var anchorCollection = this.getAnchors(domElement);
-log("anchorCollection",anchorCollection.toString());
         var anchorCollectionLen = anchorCollection.length;
         var mt = "";
         var type = "";
@@ -2015,6 +2014,7 @@ log("anchorCollection",anchorCollection.toString());
                 }
             }
         }
+log("mediaTracks",mediaTracks.toString());
         if (mediaTracks.length <= 0) {
             for (var i = 0; i < anchorCollectionLen; i++) {
                 type = String(anchorCollection[i].type).toLowerCase();
