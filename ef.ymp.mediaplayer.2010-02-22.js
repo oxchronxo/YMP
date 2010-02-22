@@ -1988,6 +1988,7 @@ log("inside parser");
     try {
         var mediaTracks = [];
         var anchorCollection = this.getAnchors(domElement);
+log("anchorCollection",anchorCollection.toString());
         var anchorCollectionLen = anchorCollection.length;
         var mt = "";
         var type = "";
