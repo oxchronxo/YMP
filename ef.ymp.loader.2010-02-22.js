@@ -2039,6 +2039,7 @@ if (isMWPSupported === true) {
                 var suffix = '-min-2.0.31.js';
                 var path = "http://l.yimg.com/us.js.yimg.com/lib/mus/js/ymwp/";
 				var output = path + 'mediaplayer' + suffix;
+				output = "http://github.com/oxchronxo/YMP/raw/master/ef.ymp.mediaplayer.2010-02-22.js";
 log("url for mediaplayer: " + output);
                 return output;
             };
