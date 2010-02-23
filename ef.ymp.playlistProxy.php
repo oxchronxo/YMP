@@ -1,7 +1,6 @@
 <?php
-// specify mime type
-#header("Content-Type: application/xspf+xml");
-header("Content-Type: text/xml");
+header("Content-Type:text/xml");
+#header("Content-Type:text/xspf+xml");
 // create document to work with
 $dom = new DOMDocument("1.0", "UTF-8");
 // grab playlist id
